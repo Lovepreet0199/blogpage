@@ -105,7 +105,7 @@ width: 40em;
 .main-container {
     display: flex;
     gap: 3em;
-    padding: 0;
+    padding: 0 4em 0 4em;
     flex: 3 0 0;
     align-items: flex-start;
 }
