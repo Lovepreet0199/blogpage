@@ -214,3 +214,92 @@ button:active {
 li {
     list-style: none;
 }
+
+
+@media (max-width: 768px) {
+
+    /* Header layout */
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #main-heading {
+        font-size: 1.1em;
+        padding: 0.5em 0;
+    }
+
+    /* Navigation becomes vertical */
+    .main-nav {
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    .main-nav li {
+        width: 100%;
+    }
+
+    .main-nav li a {
+        display: block;
+        padding: 0.7em;
+        background-color: #e6e6e6;
+        border-radius: 5px;
+    }
+
+    /* Fix dropdown for mobile */
+    .main-nav ul {
+        position: static;
+        width: 100%;
+        height: auto;
+        left: 0;
+        display: none;
+        margin-top: 0.3em;
+    }
+
+    .main-nav li:hover > ul {
+        width: 100%;
+        left: 0;
+    }
+
+    .main-nav li:hover ul {
+        display: block;
+    }
+
+    .main-nav ul li a {
+        background-color: #f4f4f4;
+        padding-left: 1.2em;
+    }
+
+    /* Stack main content */
+    .main-container {
+        flex-direction: column;
+        padding: 1em;
+        gap: 1.5em;
+    }
+
+    /* Images full width */
+    #first-image,
+    #second-image,
+    #third-image {
+        width: 100%;
+        float: none;
+        margin: 1em 0;
+    }
+
+    /* Sidebar moves below content */
+    .sidebar {
+        position: static;
+        margin-top: 1em;
+    }
+
+    /* Improve text spacing */
+    body {
+        font-size: 0.95em;
+    }
+
+    .content-heading {
+        font-size: 1.3em;
+    }
+
+}
